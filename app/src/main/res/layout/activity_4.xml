@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity2">
+
+    <EditText
+        android:id="@+id/edtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Titulo"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/edtAno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Ano de lançamento"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edtNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Nota de 0 - 100"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/edtTempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Tempo de duração"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtIdCategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Id da categoria"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textCat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Categoria:" />
+
+    <ListView
+        android:id="@+id/listCategoriaCad"
+        android:layout_width="359dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="25dp"
+        android:choiceMode="singleChoice"
+        android:listSelector="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textID" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:onClick="cancelar"
+            android:text="CANCELAR" />
+
+        <Button
+            android:id="@+id/btnSalvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:onClick="cadastrar"
+            android:text="Cadastrar" />
+    </LinearLayout>
+
+</LinearLayout>
